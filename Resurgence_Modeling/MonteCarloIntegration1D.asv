@@ -1,0 +1,21 @@
+
+
+%This function performs monte carlo integration in 1D
+
+%to do this we generate a sample of uniform random numbers from the
+%desiresd interval of integration. Then using central limit theorem, the
+%value of the itnegral is the average value of the function over the entire
+%interval
+
+a=0;
+b=2*pi;
+
+%the function to be integrated is cosine(x)
+i=1
+for n=100:100:100000
+    x=b*rand(n,1)+a;
+    intg(i)=sum(cos(x))/length(x);
+    i=i+1;
+end
+figure()
+plot(linspace(a,b,length(intg)),intg)
