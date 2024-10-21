@@ -1,6 +1,6 @@
 # OnchoEWT
 
-### Fitting and running the baseline model
+### Fitting the baseline Onchocerciasis model
 
 The folder called "BaselineFitting" contains the BM code used to fit the model to baseline data, along with the common functions found in "CommonFunctions".
 
